@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Weak Plan</title>
+  </head>
+ <body onLoad="go()">
+     Click "Open" on the browser prompt. Feel free to close this tab afterwards
+ </body>
+</html>
+
+<script type="text/javascript">
+    function go() {
+        var uri = 'weakplan://com.jrai.weakplan';
+        uri = uri + document.location.hash;
+        window.location.href = uri;
+    }
+</script>
